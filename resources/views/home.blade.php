@@ -33,7 +33,7 @@
         <div class="loader"></div>
     </div>
 
-@include('component.navbar')
+@include('component.header')
 
     <!-- Hero Section Begin -->
     <section class="hero spad set-bg" data-setbg="img/nikolai-chernichenko-6weyVIC3N-Y-unsplash-scaled.jpg">
@@ -135,7 +135,7 @@
                             </div>
                             <div class="event__item__text">
                                 <h4>MCN Services</h4>
-                                <a href="/mcnservice">More...</a>
+                                <a href="/mcnservice">More ...</a>
                             </div>
                         </div>
                     </div>
@@ -516,16 +516,8 @@
     </section>
     <!-- Youtube Section End -->
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-@include('component.footer')
+
+@include('component.footerSecond')
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>

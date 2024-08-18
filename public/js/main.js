@@ -1,154 +1,104 @@
-/*  ---------------------------------------------------
-  Template Name: DJoz
-  Description:  DJoz Music HTML Template
-  Author: Colorlib
-  Author URI: https://colorlib.com
-  Version: 1.0
-  Created: Colorlib
----------------------------------------------------------  */
-
-'use strict';
-
 (function ($) {
+    "use strict";
 
-    /*------------------
-        Preloader
-    --------------------*/
-    $(window).on('load', function () {
-        $(".loader").fadeOut();
-        $("#preloder").delay(200).fadeOut("slow");
-    });
-
-    /*------------------
-        Background Set
-    --------------------*/
-    $('.set-bg').each(function () {
-        var bg = $(this).data('setbg');
-        $(this).css('background-image', 'url(' + bg + ')');
-    });
-
-    /*------------------
-		Navigation
-	--------------------*/
-    $(".mobile-menu").slicknav({
-        prependTo: '#mobile-menu-wrap',
-        allowParentLinks: true
-    });
+    // Spinner
+    var spinner = function () {
+        setTimeout(function () {
+            if ($('#spinner').length > 0) {
+                $('#spinner').removeClass('show');
+            }
+        }, 1);
+    };
+    spinner(0);
     
-    /*--------------------------
-        Event Slider
-    ----------------------------*/
-    $(".event__slider").owlCarousel({
-        loop: true,
-        margin: 0,
-        items: 3,
-        dots: false,
-        nav: true,
-        navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-        smartSpeed: 1200,
-        autoHeight: false,
-        autoplay: true,
-        responsive: {
-            992: {
-                items: 3,
-            },
-            768: {
-                items: 2,
-            },
-            0: {
-                items: 1,
-            },
+    
+    // Initiate the wowjs
+    new WOW().init();
+    
+
+    // Sticky Navbar
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+            $('.nav-bar').addClass('sticky-top shadow-sm').css('top', '0px');
+        } else {
+            $('.nav-bar').removeClass('sticky-top shadow-sm').css('top', '-100px');
         }
     });
-    
-    /*--------------------------
-        Videos Slider
-    ----------------------------*/
-    $(".videos__slider").owlCarousel({
-        loop: true,
+
+
+    // Header carousel
+    $(".header-carousel").owlCarousel({
+        animateOut: 'fadeOut',
+        items: 1,
         margin: 0,
-        items: 4,
-        dots: false,
-        nav: true,
-        navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-        smartSpeed: 1200,
-        autoHeight: false,
+        stagePadding: 0,
         autoplay: true,
+        smartSpeed: 500,
+        dots: true,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
+        ],
+    });
+
+
+
+    // testimonial carousel
+    $(".testimonial-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        center: false,
+        dots: false,
+        loop: true,
+        margin: 25,
+        nav : true,
+        navText : [
+            '<i class="fa fa-arrow-right"></i>',
+            '<i class="fa fa-arrow-left"></i>'
+        ],
+        responsiveClass: true,
         responsive: {
-            992: {
-                items: 4,
+            0:{
+                items:1
             },
-            768: {
-                items: 3,
+            576:{
+                items:1
             },
-            576: {
-                items: 2,
+            768:{
+                items:2
             },
-            0: {
-                items: 1,
+            992:{
+                items:2
+            },
+            1200:{
+                items:2
             }
         }
     });
 
-    /*------------------
-		Magnific
-	--------------------*/
-    $('.video-popup').magnificPopup({
-        type: 'iframe'
+
+    // Facts counter
+    $('[data-toggle="counter-up"]').counterUp({
+        delay: 5,
+        time: 2000
     });
 
-    /*------------------
-        CountDown
-    --------------------*/
-    // For demo preview
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    var yyyy = today.getFullYear();
 
-    if(mm == 12) {
-        mm = '01';
-        yyyy = yyyy + 1;
+   // Back to top button
+   $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+        $('.back-to-top').fadeIn('slow');
     } else {
-        mm = parseInt(mm) + 1;
-        mm = String(mm).padStart(2, '0');
+        $('.back-to-top').fadeOut('slow');
     }
-    var timerdate = mm + '/' + dd + '/' + yyyy;
-    // For demo preview end
-    
-
-    // Use this for real timer date
-    /* var timerdate = "2020/01/01"; */
-
-	$("#countdown-time").countdown(timerdate, function(event) {
-        $(this).html(event.strftime("<div class='countdown__item'><span>%D</span> <p>Days</p> </div>" + "<div class='countdown__item'><span>%H</span> <p>Hours</p> </div>" + "<div class='countdown__item'><span>%M</span> <p>Minutes</p> </div>" + "<div class='countdown__item'><span>%S</span> <p>Seconds</p> </div>"));
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
     });
 
-    /*------------------
-		Barfiller
-	--------------------*/
-    $('#bar1').barfiller({
-        barColor: "#ffffff",
-    });
-
-    $('#bar2').barfiller({
-        barColor: "#ffffff",
-    });
-
-    $('#bar3').barfiller({
-        barColor: "#ffffff",
-    });
-
-    /*-------------------
-		Nice Scroll
-	--------------------- */
-    $(".nice-scroll").niceScroll({
-        cursorcolor: "#111111",
-        cursorwidth: "5px",
-        background: "#e1e1e1",
-        cursorborder: "",
-        autohidemode: false,
-        horizrailenabled: false
-    });
 
 })(jQuery);
+

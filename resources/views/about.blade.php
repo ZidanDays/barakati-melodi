@@ -1,183 +1,79 @@
-@extends('layouts.second')
+@extends('layouts.main')
 
 @section('container')
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
+        <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+            <li class="breadcrumb-item active text-primary">About Us</li>
+        </ol>    
+    </div>
+</div>
+<!-- Header End -->
 
-    <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb__links">
-                        <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>About</span>
+<!-- About Us Start -->
+<div class="container-fluid feature bg-light py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Who We Are</h4>
+            <h1 class="display-4 mb-4">Barakati Melodies</h1>
+            <p class="mb-0">
+                Barakati Melodies is a pioneering music aggregator dedicated to preserving and promoting the vibrant cultural heritage of Indonesian music. We work tirelessly to protect the rights of artists and songwriters, ensuring their creations reach audiences around the world. With our extensive expertise and commitment to excellence, we offer a full suite of services to support artists in every stage of their musical journey.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="feature-box p-4 text-center bg-white shadow-sm h-100">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-music fa-3x text-primary"></i>
                     </div>
+                    <h4 class="mb-3">Catalog Management</h4>
+                    <p class="mb-0">
+                        At Barakati Melodies, our catalog management system provides comprehensive control and organization over your music collection. We ensure that every piece of your work, from individual tracks to complete albums, is meticulously documented and managed. Our system allows you to track the performance, rights, and distribution of each song, giving you real-time insights into where and how your music is being used globally. With our robust catalog management, you can easily update, monitor, and optimize your music catalog, ensuring that your work is always in the best position to reach its audience and generate revenue.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="feature-box p-4 text-center bg-white shadow-sm h-100">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-globe fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="mb-3">Global Distribution</h4>
+                    <p class="mb-0">
+                        At Barakati Melodies, we take pride in ensuring that your music reaches audiences worldwide with precision and efficiency. Our Distribution and Delivery services are designed to maximize the global reach of your music, ensuring that your work is available on all major platforms and digital stores. We handle the complex logistics of distributing your tracks, albums, and compilations, guaranteeing that they are delivered to the right channels at the right time. From digital streaming services to physical releases, our goal is to provide seamless and effective distribution, so your music can connect with listeners everywhere. With Barakati Melodies, your music is in trusted hands, ready to make an impact on the global stage.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="feature-box p-4 text-center bg-white shadow-sm h-100">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-chart-line fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="mb-3">Analytics & Reporting</h4>
+                    <p class="mb-0">
+                        Our Analytics & Reporting service at Barakati Melodies provides you with detailed insights into your music’s performance across platforms. We help you understand your audience, optimize your strategies, and make data-driven decisions to maximize your music’s impact. With real-time analytics, you can track your music’s reach, identify trends, and refine your approach to ensure continued success in a dynamic market.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="feature-box p-4 text-center bg-white shadow-sm h-100">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-headphones fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="mb-3">Artist Support</h4>
+                    <p class="mb-0">
+                        At Barakati Melodies, we believe in empowering artists to thrive in their creative pursuits. Our Artist Support services are tailored to provide you with the resources, guidance, and expertise needed to navigate the complex music industry. Whether it’s strategic advice, marketing support, or connecting you with industry professionals, we are here to help you grow your career and reach new heights. Our commitment to artist success is at the heart of everything we do.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Breadcrumb End -->
+</div>
+<!-- About Us End -->
 
-    <!-- Skills Section Begin -->
-    <section class="skills spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 p-0">
-                    <div class="skills__content">
-                        <div class="section-title">
-                            <h2>DJ Alexandra Rud</h2>
-                            <h1>DJ’s skill</h1>
-                        </div>
-                        <p>DJ Rainflow knows how to move your mind, body and soul by delivering tracks that stand out
-                            from the norm.</p>
-                        <div class="skill__bar__item">
-                            <p>Perform</p>
-                            <div id="bar1" class="barfiller">
-                                <span class="tip"></span>
-                                <span class="fill" data-percentage="95"></span>
-                            </div>
-                        </div>
-                        <div class="skill__bar__item">
-                            <p>Use Midi</p>
-                            <div id="bar2" class="barfiller">
-                                <span class="tip"></span>
-                                <span class="fill" data-percentage="85"></span>
-                            </div>
-                        </div>
-                        <div class="skill__bar__item">
-                            <p>Remix and mash up</p>
-                            <div id="bar3" class="barfiller">
-                                <span class="tip"></span>
-                                <span class="fill" data-percentage="98"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 p-0">
-                    <div class="skills__video set-bg" data-setbg="img/skill-video.jpg">
-                        <a href="https://www.youtube.com/watch?v=S19UcWdOA-I?autoplay=1" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Skills Section End -->
-
-    <!-- About Section Begin -->
-    <section class="about about--page spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about__pic">
-                        <img src="img/about/about.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about__text">
-                        <div class="section-title">
-                            <h2>He heard something that he knew to be music</h2>
-                        </div>
-                        <p>At vero eos et accusamus et iusto odi odgnissimos ducimus qui blanditiis praesentium volup
-                            tatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi quod
-                            justo pro an.</p>
-                        <img src="img/about/signature.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- About Pic Begin -->
-    <div class="about-pic">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 p-0">
-                            <img src="img/about/ap-1.jpg" alt="">
-                            <img src="img/about/ap-2.jpg" alt="">
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 p-0">
-                            <img src="img/about/ap-3.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-8 p-0">
-                            <img src="img/about/ap-4.jpg" alt="">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 p-0">
-                            <img src="img/about/ap-5.jpg" alt="">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 p-0">
-                            <img src="img/about/ap-6.jpg" alt="">
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 p-0">
-                            <img src="img/about/ap-7.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About Pic End -->
-
-    <!-- About Services Section Begin -->
-    <section class="about-services spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title center-title">
-                        <h2>WHERE DO I PLAY</h2>
-                        <h1>Best service</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="about__services__item">
-                        <div class="about__services__item__pic set-bg" data-setbg="img/services/as-1.jpg">
-                            <div class="icon">
-                                <img src="img/services/as-icon-1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="about__services__item__text">
-                            <h4>Wedding</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="about__services__item">
-                        <div class="about__services__item__pic set-bg" data-setbg="img/services/as-2.jpg">
-                            <div class="icon">
-                                <img src="img/services/as-icon-2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="about__services__item__text">
-                            <h4>Clubs and bar</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="about__services__item">
-                        <div class="about__services__item__pic set-bg" data-setbg="img/services/as-3.jpg">
-                            <div class="icon">
-                                <img src="img/services/as-icon-3.png" alt="">
-                            </div>
-                        </div>
-                        <div class="about__services__item__text">
-                            <h4>Corporate events</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Services Section End -->
-
+@include('component.faqs')
+    
 @endsection

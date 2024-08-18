@@ -12,21 +12,17 @@
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li><a href="/">Home</a></li>
-                                <li><a href="#">Services</a>
+                                {{-- <li><a href="#">Services</a>
                                     <ul class="dropdown">
-                                        <li><a href="/music-distribution">Music Distribution</a></li>
-                                        <li><a href="/right-management">Right Management</a></li>
-                                        <li><a href="/music-promotion">Music Promotion</a></li>
-                                        <li><a href="/analitics-and-reporting">Analitics & Reporting</a></li>
-                                        <li><a href="/music-publishing">Music Publishing</a></li>
-                                        <li><a href="/music-investment">Music Investment</a></li>
-                                        <li><a href="/mcn-services">MCN Services</a></li>
+                                        <li><a href="/catalog-management">Catalog Management</a></li>
+                                        <li><a href="/distribution-and-delivery">Distribution & Delivery</a></li>
+                                        <li><a href="/analitycs-and-reporting">Analitics & Reporting</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="active"><a href="/about">About</a></li>
                                 {{-- <li><a href="/discography">Discography</a></li> --}}
                                 {{-- <li><a href="./tours.html">Tours</a></li> --}}
-                                <li><a href="/videos">Videos</a></li>
+                                {{-- <li><a href="/videos">Videos</a></li> --}}
                                 <li><a href="/contact">Contact</a></li>
                             </ul>
                         </nav>

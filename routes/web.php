@@ -27,6 +27,12 @@ Route::get('/contact', function () {
 
 
 
-Route::get('/music-distribution', function () {
-    return view('music-distribution');
+Route::get('/catalog-management', function () {
+    return view('services.catalog-management');
+});
+Route::get('/distribution-and-delivery', function () {
+    return view('services.distribution-and-delivery');
+});
+Route::get('/analytics-and-reporting', function () {
+    return view('services.analytics-and-reporting');
 });

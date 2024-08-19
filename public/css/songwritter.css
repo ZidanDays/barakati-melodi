@@ -1,0 +1,173 @@
+/* Animation for fadeInUp */
+.wow {
+    visibility: hidden;
+}
+.wow.fadeInUp {
+    animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add hover effect to list items */
+.animated-item {
+    transition: transform 0.3s, color 0.3s;
+}
+.animated-item:hover {
+    transform: translateX(10px);
+    color: #007bff;
+}
+
+/* Animation for fadeIn and fadeInLeft */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.wow.fadeIn {
+    animation-name: fadeIn;
+}
+
+.wow.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+/* Alternate hover effect for list items */
+.animated-item-alt {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.animated-item-alt:hover {
+    transform: translateX(15px);
+    color: #ffc107;
+}
+
+/* Style adjustments */
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.border-light {
+    border-color: #f8f9fa !important;
+}
+
+.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+.text-secondary {
+    color: #adb5bd !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+/* Animation for slideInUp and zoomIn */
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.wow.slideInUp {
+    animation-name: slideInUp;
+}
+
+.wow.zoomIn {
+    animation-name: zoomIn;
+}
+
+/* Styling for the cards */
+.service-item {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    top: -10px;
+    right: -10px;
+}
+
+.text-info {
+    color: #17a2b8 !important;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.border {
+    border-color: #dee2e6 !important;
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+.feature-icon:hover {
+    transform: rotate(360deg);
+}
+
+.platform-logo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}

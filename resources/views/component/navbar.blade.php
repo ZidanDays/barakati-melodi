@@ -32,6 +32,21 @@
 
                 </div>
               </div>
+            {{-- <div class="nav-item dropdown">
+                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                  <span class="dropdown-toggle">Helpdesk</span>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="/audio-tracks" class="dropdown-item">Audio Tracks</a>
+                  <a href="/format-and-spelling-of-artist-name" class="dropdown-item">Format and Spelling of Artist Name</a>
+                  <a href="/name-ofcomposer-or-songwriter" class="dropdown-item"
+                    >Name of Composer or Songwriter</a
+                  >
+                  <a href="/artwork-or-cover" class="dropdown-item"
+                    >Artwork or Cover</a
+                  >
+                </div>
+              </div> --}}
             {{-- <a href="blog.html" class="nav-item nav-link">Blog</a> --}}
             {{-- <div class="nav-item dropdown">
               <a href="#" class="nav-link" data-bs-toggle="dropdown">
@@ -47,6 +62,7 @@
                 <a href="404.html" class="dropdown-item">404 Page</a>
               </div>
             </div> --}}
+            <a href="/helpdesk" class="nav-item nav-link">Helpdesk</a>
             <a href="/contact" class="nav-item nav-link">Contact</a>
             <!-- <div class="nav-btn px-3">
               <button
